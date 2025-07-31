@@ -1,17 +1,16 @@
-const Player1 = {
-  NOME: "Mario",
-  VELOCIDADE: 4,
-  MANOBRABILIDADE: 3,
-  PODER: 3,
-  PONTOS: 0,
-};
-const Player2 = {
-  NOME: "Luigi",
-  VELOCIDADE: 3,
-  MANOBRABILIDADE: 4,
-  PODER: 4,
-  PONTOS: 0,
-};
+const players = {
+  MARIO: { NOME: "Mario",  VELOCIDADE: 4,  MANOBRABILIDADE: 3,  PODER: 3,  PONTOS: 0},
+  PEACH: { NOME: "Peach", VELOCIDADE: 3,  MANOBRABILIDADE: 4, PODER: 2, PONTOS: 0 },
+  YOSHI: { NOME: "Yoshi", VELOCIDADE: 2,  MANOBRABILIDADE: 4, PODER: 3, PONTOS: 0 },
+  BOWSER: { NOME: "Bowser", VELOCIDADE: 5, MANOBRABILIDADE: 2, PODER: 5, PONTOS: 0 },
+  LUIGI: { NOME: "Luigi", VELOCIDADE: 3, MANOBRABILIDADE: 4, PODER: 4, PONTOS: 0 },
+  DONKEY_KONG: { NOME: "Donkey Kong", VELOCIDADE: 2, MANOBRABILIDADE: 2, PODER: 5, PONTOS: 0 },
+}
+ 
+
+
+const Player1 = players.MARIO;
+const Player2 = players.LUIGI
 
 //Criando uma acção para girar o dado e gerar um número aleatório entre 1 e 6.
 // async(função assincrona) funões que serve para que uma função espere uma ordem para ser executada.
